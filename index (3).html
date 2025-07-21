@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pakistan Jobs Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Pakistan Jobs Portal</h1>
+    <p>Find Government & Private Jobs Across Pakistan</p>
+  </header>
+
+  <section class="filters">
+    <select id="province-filter">
+      <option value="">Select Province</option>
+      <option value="Punjab">Punjab</option>
+      <option value="Sindh">Sindh</option>
+      <option value="KPK">KPK</option>
+      <option value="Balochistan">Balochistan</option>
+      <option value="AJK">AJK</option>
+      <option value="GB">Gilgit-Baltistan</option>
+    </select>
+
+    <select id="district-filter">
+      <option value="">Select District</option>
+    </select>
+
+    <button onclick="filterJobs('Govt')">Government Jobs</button>
+    <button onclick="filterJobs('Private')">Private Jobs</button>
+  </section>
+
+  <section id="job-listings">
+    <!-- Job cards will load here -->
+    <div class="job-card" data-type="Govt" data-province="Punjab" data-district="Lahore">
+      <h3>Junior Clerk - PPSC</h3>
+      <p><strong>Location:</strong> Lahore, Punjab</p>
+      <p><strong>Requirements:</strong> Intermediate, Typing Test</p>
+      <p><strong>Last Date:</strong> 2025-08-10</p>
+      <a href="https://ppsc.gop.pk" target="_blank">Apply Now</a>
+    </div>
+    <div class="job-card" data-type="Private" data-province="Sindh" data-district="Karachi">
+      <h3>Sales Executive - XYZ Pvt Ltd</h3>
+      <p><strong>Location:</strong> Karachi, Sindh</p>
+      <p><strong>Requirements:</strong> Bachelor’s + Sales Exp.</p>
+      <p><strong>Last Date:</strong> 2025-07-30</p>
+      <a href="https://rozee.pk" target="_blank">Apply Now</a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
